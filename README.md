@@ -3,6 +3,7 @@
 ## Overview
 
 The **Online Test Management System** is a FastAPI application that allows for managing quizzes and user interactions. It includes APIs for both admin and user functionalities.
+![Screenshot 2024-08-07 at 11 53 40 PM](https://github.com/user-attachments/assets/41ab6311-7017-457c-a542-70399dbb0d40)
 
 ### Project Structure
 
@@ -57,14 +58,6 @@ Ensure you have a PostgreSQL database. Update the `SQLALCHEMY_DATABASE_URL` in `
 SQLALCHEMY_DATABASE_URL = "postgresql://username:password@host:port/database"
 ```
 
-**Run Migrations:**
-
-Make sure you have Alembic installed and configured. Run the migrations to set up the database schema:
-
-```sh
-alembic upgrade head
-```
-
 ### Running the Application
 
 Start the FastAPI application using:
@@ -82,11 +75,16 @@ The API documentation is available at http://127.0.0.1:8000/docs.
 ### Admin User Credentials
 
 For testing and using admin APIs:
+Only this is the credintials of admin. so Use this will checking the code.
 
 Username: admin
 Password: password
 
+
+I have already posted the question in the data base so you can read them from the read api of admin.
+
 ### API Endpoints
+
 
 **Admin APIs**
 
@@ -150,6 +148,8 @@ Parameters: username
 
 ### Database Schema
 
+![Screenshot 2024-08-07 at 11 54 03 PM](https://github.com/user-attachments/assets/a90b2580-64ed-4694-8b34-8eb84ce741e8)
+
 **quiz Table**
 
 - id: Integer, Primary Key
@@ -159,6 +159,7 @@ Parameters: username
 - marks: Integer (default 10)
 
 **user Table**
+![Screenshot 2024-08-07 at 11 55 00 PM](https://github.com/user-attachments/assets/aa99d885-6097-43f4-8055-5fd93d1cba5b)
 
 - id: Integer, Primary Key
 - username: String
